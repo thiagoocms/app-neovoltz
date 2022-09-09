@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-NeovoltzApplication<neovoltz>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.neovoltz.neovoltz.NeovoltzApplication",
+            "projectName": "neovoltz",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

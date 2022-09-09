@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script th:src="@{https://unpkg.com/scrollreveal}"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header class="um">
+            <div>
+                <p><strong>Neo</strong>Voltz</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#neoVoltz">A Neovoltz</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#contato">contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="neoVoltz" class="module parallax parallax-1">
+                <div class="content1">
+                    <div class="container1">
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section id="servicos" class="module content">
+                <div class="container v">
+                    <h2>Serviços</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+
+
+                </div>
+
+            </section>
+            <section id="sustentabilidade" class="module content">
+                <div class="container v">
+                    <h2>Sustentabilidade</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+
+
+                </div>
+
+            </section>
+            <section id="contato" class="module content">
+                <div class="container v">
+                    <h2>contato</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
+
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script>
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", ()=>{
+            if(window.pageYOffset > 300 && header.classList.contains("um")){
+                header.classList.remove("um");
+                header.classList.add("dois");
+            }else if(window.pageYOffset <= 300 && header.classList.contains("dois")){
+                header.classList.remove("dois");
+                header.classList.add("um");
+            }
+        })
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal(".v",{duration: 400})
+       
+    </script>
+</body>
+</html>
