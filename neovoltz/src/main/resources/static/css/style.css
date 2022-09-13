@@ -9,44 +9,108 @@
     transition: all .5s ease-in-out;
 }
 
-header{
+.um{
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px ;
     position: fixed;
-    z-index: 5;
+    z-index: 3;
    
     
+    height: 100px;
     
 }
-.um{
-   
 
-    background: linear-gradient(180deg, #43832D 0%, rgba(67, 131, 45, 0.296875) 94.27%, rgba(67, 131, 45, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    height: 100px; 
-}
+   
+    
+    
+     
+
+
 .dois{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px ;
+    position: fixed;
+    z-index: 3;
+   
+    
+   
     background-color: rgb(53, 52, 52);
     height: 85px;
 }
-ul{
+.um::before{
+    content: "";
+    height: 110px;
+    background: linear-gradient(180deg, #43832D 0%, rgba(67, 131, 45, 0.296875) 94.27%, rgba(67, 131, 45, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
+    position: fixed; 
+    z-index: -1;
+}
+
+.tres::before{
+    width: 100%;
+    height: 120px;
+  
+    top: 0;
+    left: 0;
+  
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 250ms ease-in;
+  }
+  
+  .tres:hover::before{
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+nav ul{
+    
     text-align: left;
     margin-right: 50px;
 }
-ul li{
+nav ul li{
     display: inline-block;
     padding: 15px;
     
     
 }
-ul li a{
+
+nav ul li a{
+    padding-bottom: 2px;
+    position: relative;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    
 }
+nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
 header div p{
     font-size: 30px;
     color: white;
@@ -92,19 +156,34 @@ section.module.parallax-1{
     
 }
 .content1{
+    margin-top: 200px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+   /* background: rgba(0, 0, 0, 0.5);*/
 }
 .container1{
     background: rgba(217, 217, 217, 0.6);
-    border-radius: 33px;
-    width: 450px;
-    height: 400px;
-    margin-left: 13%;
-    margin-top: 15%;
+    border-radius: 120px;
+    width: 600px;
+    height: 600px;
+    margin-top: 10%;
+    margin-left: -3%;
+    transform:rotate(45deg);
     
+    
+}
+.container2{
+    transform: rotate(-45deg);
+    
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 450px;
+    height: 450px;
 }
 .v{
     visibility: hidden;
 }
+
+
+
+
