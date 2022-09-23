@@ -1,6 +1,7 @@
 package com.neovoltz.neovoltz.controllers.routers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.servlet.ModelAndView;
@@ -16,13 +17,15 @@ public class indexRouter {
         mv.setViewName("home/index");
         return mv;
     }
-
-    @GetMapping("/login")
-    public ModelAndView index2(){
+    @GetMapping("/home")
+    public ModelAndView index2( Model model){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("home/login");
+        mv.setViewName("home/index_2");
+       
         return mv;
     }
+
+    
     
 
     

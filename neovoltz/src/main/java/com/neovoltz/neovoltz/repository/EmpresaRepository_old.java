@@ -1,4 +1,4 @@
-package com.neovoltz.neovoltz.controllers.repository;
+package com.neovoltz.neovoltz.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.neovoltz.neovoltz.controllers.models.Empresa;
 
 @Repository
-public class EmpresaRepository {
+public class EmpresaRepository_old {
     private List<Empresa> empresas = new ArrayList<Empresa>();
     private Integer lastId = 0;
 
