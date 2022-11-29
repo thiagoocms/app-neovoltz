@@ -37,8 +37,6 @@ public class EmpresaService {
     public Empresa adicionar(Empresa empresa) {
      
        empresa.setId(null);
-
-      
        return empresaRepository.save(empresa);
     }
 

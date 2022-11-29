@@ -16,9 +16,7 @@ public class Empresa {
 
     private String cnpj;
 
-    private String credencial;
-
-    private String senha;
+    private String contato;
     
     
 
@@ -46,21 +44,14 @@ public class Empresa {
         this.cnpj = cnpj;
     }
 
-    public String getCredencial() {
-        return credencial;
+    public String getContato() {
+        return contato;
     }
 
-    public void setCredencial(String credencial) {
-        this.credencial = credencial;
+    public void setContato(String contato) {
+        this.contato = contato;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
     
 
     

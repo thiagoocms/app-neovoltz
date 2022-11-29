@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -95,7 +96,7 @@ nav ul li{
     
 }
 ul{
-    margin-left: 410px;
+    margin-left: 300px;
 }
 
 nav ul li a{
@@ -190,6 +191,8 @@ section.module.parallax-2{
     background-image: url(../img/terraGrande.png);
     background-size: 100% 100%;
     max-width: 100%;
+
+    
     
 }
 .content1{
@@ -213,7 +216,7 @@ section.module.parallax-2{
     transform: rotate(-45deg);
     font-size: 25px;
     margin-top: -80px;
-    margin-left: 40px;
+    margin-left: 100px;
 
     
    
@@ -226,6 +229,11 @@ section.module.parallax-2{
 }
 .v{
     visibility: hidden;
+}
+.i{
+    margin-top: -2px;
+    border: 0;
+    background: #D6D6D6;
 }
 .img1{
     background: url(../img/linha\ branca.png);
@@ -251,27 +259,76 @@ section.module.parallax-2{
     width: 95vw;
     height: 75px;
     background-repeat: no-repeat;
-    margin-bottom: -115px;
+    margin-bottom: -100px;
     margin-left: 51.5px;
     background-size: cover;
     
 }
-.i{
-    margin-top: -2px;
-    border: 0;
-    background: #D6D6D6;
-}
+
+
 .container11{
     background: #00000080;
-    border-radius: 80px;
+    border-radius: 40px;
     width: 350px;
+    
     height: 350px;
     margin-top: 30px;
     background-attachment: fixed;
     margin-left: 5%;
     transform:rotate(45deg);
+
     
     
+}
+.container12{
+    transform:rotate(-45deg);
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    
+    
+}
+.container111{
+    background: #00000080;
+    border-radius: 40px;
+    width: 850px;
+    height: 370px;
+    margin-top: 30px;
+    background-attachment: fixed;
+    margin-left: 70px;
+   display: flex;
+   padding-top: 100px;
+    
+   
+}
+.container111 p{
+    width: 48%;
+    margin-left: 10px;
+    
+}
+.kk{
+    height: 130px;
+}
+.kk2{
+    height: 200px;
+}
+.cs{
+    display: flex;
+}
+.bgt{
+    padding: 0 auto;
+    background: rgba(156, 255, 121, 0.87);
+border-radius: 7px;
+
+}
+.w{
+    width: 220px;
+    text-align: center;
+}
+.aa{
+    width: 300px;
+    margin-left: -40px;
+    padding: 2px;
 }
 section.module.parallax:after{
     content: "";
@@ -290,6 +347,7 @@ section.module.parallax:after{
     height: 250px;
     margin-bottom: 35px;
     
+    
    
     
     
@@ -298,6 +356,7 @@ section.module.parallax:after{
 .exemplo1{
    
     margin-left: 580px;
+    
    
     
 }
@@ -324,21 +383,299 @@ section.module.parallax:after{
     background: url(../img/img\ 3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 550px;
-    height: 350px;
-    margin-left: -110px;
+    width: 650px;
+    height: 420px;
+    margin-left: -210px;
 }
 .texto1{
     float: left;
-    width: 700px;
+    width: 500px;
     height: 80vh;
+    margin-top: 55px;
     
     margin-left: -200px;
     
 }
+.texto1 h2{
+   padding-left: 300px;
+   
+}
+.texto1 p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.texto2{
+    float: left;
+    width: 350px;
+    height: 80vh;
+    
+    margin-top: -10px;
+    margin-left: -200px;
+}
+.texto2 p{
+    font-size: 17px;
+}
+.texto3{
+    float: right;
+    width: 450px;
+    height: 220px;
+    margin-top: 10px;
+    margin-right: -200px;
+    
+   
+}
 .rounded-e{
     border-radius: 15px;
 }
+.fundo1{
+    background: url(../img/fundo2.png);
+    margin-top: -40px;
+    background-size: 100% 100%;
+}
+.fundo{
+    background: url(../img/fundo2.png);
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    
+}
+.vira{
+    transform: rotate(-180deg);
+}
+.logo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(../img/logo1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -13px;
+    margin-left: -80px;
+    
+    
+}
+.w50{
+    width: 500px;
+    height: 50px;
+    padding-bottom: 80px;
+}
+.w100{
+    width: 1100px;
+   
+}
+.right{
+    float: right;
+}
+.contato{
+    margin: 0 130px;
+}
+.left{
+    float: left;
+    
+}
+.left2{
+    width: 100%;
+    float: left;
+
+}
+.bb{
+    border-radius: 50px;
+    padding: 7px 30px;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+.fale{
+    margin-left: -20px;
+    margin-bottom: 70px;
+}
+.contato1{
+    background: url(../img/logo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+ 
+}
+.contato2{
+    background: rgba(156, 255, 121, 0.5);
+
+}
+.flooter{
+    
+    width: 100%;
+    height: 40px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline;
+    color: white;
+    padding: 10px;
+    
+}
+.cont p{
+    background-color: transparent;
+    width: 300px;
+    margin-left: -50px;
+}
+
+
+
+.navigation{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #5a595a;
+    transition: 0.5s;
+    overflow: hidden;
+   
+    
+    
+}
+.navigation.active,
+.navigation:hover {
+    width: 230px;
+    
+}
+.navigation.active ul{
+    
+}
+.navigation ul {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; 
+   margin-left: -35px;
+   overflow:visible;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #ece3e6;
+    border-radius: 5px;
+    
+}
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    
+}
+
+ .navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa-solid{
+    font-size: 24px;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+}
+.toggle.active{
+    background: #ea1d63;
+}
+.toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active:before{
+    content: '\f00d'; 
+}
+@media (max-width:767px){
+    .navigation{
+        left: -60px;
+    }
+    .navigation.active{
+        left: 0px;
+        width: 100%;
+    }
+} 
+li.btn2{
+    padding: 1px 1px;
+}
+.corpo{
+    background: rgba(157, 255, 121, 0.329);
+    width: calc(100vw - 60px);
+    height: 100vh;
+    margin-left: 60px;
+    padding: 5px ;
+}
+.box-content{
+    
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.box{
+    margin-left: 100px;
+    padding: 5px;
+    width: 1100px;
+    height: 50%;
+    
+}
+.mi{
+    display: flex;
+   
+}
+.mini{
+    width: 100px;
+    height: 80px;
+    margin: 10px  35px;
+    
+    border-radius: 10px;
+}
+.red{
+    background-color: red;
+
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+
+
+   
+
+
+
+
 
 
 

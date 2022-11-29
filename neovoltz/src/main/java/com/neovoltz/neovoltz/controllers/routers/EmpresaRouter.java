@@ -12,15 +12,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.neovoltz.neovoltz.controllers.models.Empresa;
+
 import com.neovoltz.neovoltz.services.EmpresaService;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/test/empresa")
 public class EmpresaRouter {
 
     @Autowired
     public EmpresaService empresaService;
+
+   
 
     @GetMapping
     public List<Empresa> obterTodos(){
@@ -51,6 +55,7 @@ public class EmpresaRouter {
             
         return empresaService.atualizar(id, empresa);
     }
+    
 
     
 }

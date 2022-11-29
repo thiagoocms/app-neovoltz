@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script th:src="@{https://unpkg.com/scrollreveal}"></script>
+    <link rel="icon" th:href="@{/img/logo1.png}">
    <!-- CSS only -->
 <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" >
     <link rel="stylesheet" th:href="@{/css/style.css}">
-    <title>Document</title>
+    <title>NeoVoltz</title>
 </head>
 <body>
     <div>
@@ -16,7 +17,10 @@
            
             <nav class="navbar navbar-expand-sm navbar-light bg-transparent ">
                 <div class="navbar-brand">
-                   <a href="#home"> <p><strong>Neo</strong>Voltz</p></a>
+                   <a href="#home">
+                    
+                    <p><span class="logo"></span><strong>Neo</strong>Voltz</p>
+                </a>
                 </div>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                     <span class="navbar-toggler-icon"></span>
@@ -34,6 +38,9 @@
                 
             </nav>
         </header>
+        <div th:if="${param.error}">
+            credencial ou senha invalida!
+        </div>
         
        <!-- Modal -->
         <div class="modal fade py-5 rounded-e" id="dd" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
@@ -47,23 +54,23 @@
                 </button>
                 </div>
                 <div class="modal-body ">
-                    <form  action="#" th:object="${Empresa}" th:action="@{/login}" method="post">
+                    <form  action="#" th:object="${Usuario}" th:action="@{/}" method="post">
                         <div class="form-floating mb-3">
-                            <input name="credencial"type="text" class="form-control rounded-e" id="floatingInput" placeholder="nome.sobrenome">
-                            <label for="floatingInput">Credencial</label>
+                            <input name="credencial"type="text" class="form-control rounded-e" id="credencial" placeholder="nome.sobrenome">
+                            <label for="credencial">Credencial</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input  name="senha"type="password" class="form-control rounded-e" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Senha</label>
+                            <input  name="senha"type="password" class="form-control rounded-e" id="senha" placeholder="Password">
+                            <label for="senha">Senha</label>
                             <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger alert-dismissible">
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                 
                               </div>
                           </div>
                          
-                          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
-                          <small class="text-muted">....</small>
-                          <hr class="my-4">
+                          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary disabled" type="submit">Entrar</button>
+                          
+                          
                          
                  </form>
      
@@ -85,6 +92,10 @@
                         <div class="container2">
                             <p>Bem-vindo  à </p>
                             <h3><strong>NEO</strong>VOLTZ!</h3>
+                            <br>
+                            <div class="cont">
+                                <p>A NeoVoltz tem a energia que sua empresa precisa para cuidar do planeta.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -95,12 +106,19 @@
             <section id="neoVoltz"  class="module content">
                 <div class="img1 "></div>
                 <div class="container v">
-                    <h2 >A Neovoltz</h2>
+                    
                     <div class="texto1">
+                        <h2 >Quem somos</h2>
                     <p>A pioneira na produção de energia limpa.</p>  
-                    <br><br><br><br>
-                    <p>A NeoVoltz almeja atuar em todo o território nacional. Gerando energia limpa e renovável, ajudando a sua empresa a cuidar do planeta. </p> 
+                    
+                    <p>A NeoVoltz almeja atuar em todo o território nacional. Gerando energia limpa e renovável, ajudando a sua empresa a cuidar do planeta. </p>
+                    <br>
+                    <h2 >Diferencial</h2>
+                    <p>Especialização em energia limpa. Cuidando do planeta e fazendo com que seja possível que ele se torne a casa das futuras gerações.
+                    </p> 
                     </div>
+                    
+                    
 
                     <div class="exemplo1">
                         <div class="exemplo im1"> </div>
@@ -115,36 +133,105 @@
             <section id="servicos" class="module content i">
                 <div class="img2 "></div>
                 <div class="container v ">
-                    <h2>Serviços</h2>
+                    <h2>O que fazemos?</h2>
+                    <div class="texto2">
+                        <h3>Energia limpa!</h3>
+                        <p>O processo é feito em um biodigestor, que são equipamentos selados e impermeáveis dentro dos quais é depositado material orgânico para fermentar anaerobicamente, ou seja, sem a presença do ar atmosférico por um determinado tempo de retenção, no qual ocorre um processo chamado biodigestão anaeróbica.
+                            <br><br>
+                            Esse biogás gerado é utilizado para mover um motogerador e gera energia elétrica que é registrada e distribuída na rede da controladora de energia local.
+                            </p>
+                    </div>
                     <div class="exemplo1">
                         <div class="im3"></div>
                     </div>
+                    <div class="texto3">
+                        <p>A tecnologia de aproveitamento do gás de lixo (GDL), ou biogás produzido nos aterros (landfill gas), é o uso energético mais simples dos resíduos sólidos urbanos.
+                            <br><br>
+                            Ou seja, é a alternativa que pode ser aplicada a curto e médio prazos para os gases produzidos na maioria dos aterros já existentes, como ocorre em centenas de aterros de diversos países.</p>
+                    </div>
 
                 </div>
-                <div class="img3 "></div>
+                
                 
                 
             </section>
             <section id="sustentabilidade" class="module parallax parallax-2">
-               <div class="container11"></div>
+                <div class="cs">
+                   
+               <div class="container11">
+                <div class="container12">
+                    <div class="bgt w">
+                        <h3 >Sustentabilidade</h3>
+                    </div>
+                    <br>
+                   <div class="bgt aa">
+                    <p >
+                        Para nós, sustentabilidade não é apenas um discurso, é nosso dia a dia!</p>
+                   </div>
 
-            </section>
-            <section id="contato"  class="module content">
+                </div>
                 
-                <div class="container v">
-                    
-                    <h2>Contato</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cupiditate dolorum natus? Consequatur, reiciendis distinctio earum perspiciatis optio ad laudantium beatae sapiente magni, et iste corporis vero tempore delectus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut nihil minus eveniet nisi, magni dolore libero tenetur dicta voluptas eaque qui nam mollitia aliquam voluptatum provident sequi accusantium facilis.</p>
-
-
+               </div>
+               <div class="container111">
+                <p class="bgt kk">
+                    Somos uma transnacional brasileira especialista em energia limpa, 
+                    incentivo a reciclagem e que respeita as regras de compliance e responsabilidade socioambiental,
+                     prezando a ética e o pronto atendimento às demandas de nossos clientes.
+                </p>
+                <p class="bgt kk2">
+                    Temos conhecimento e experiência para fazer de um  dano ambiental, 
+                    a solução para uma questão energética. Além de lidar com impactos sociais que vivenciamos hoje,
+                     oferecendo serviços personalizados e expertise aos nossos clientes, para juntos superar os desafios
+                      da sustentabilidade. Afinal, para nós, sustentabilidade não é apenas um discurso, é nosso dia a dia.
+                </p>
+               </div>
                 </div>
 
             </section>
+            <section   class="module content contato2 left2">
+                <div >
+                    <div class="contato1"></div>
+                    <div id="contato"></div>
+                <div class="contato">
+                    
+                    <div class="fale"><h1><strong>Fale com a <p> NeoVoltz</p></strong></h1></div>
+                    
+                    <form action="#" th:object="${Empresa}" th:action="@{/contato}" method="post">
+                        
+                        <div class="form-floating mb-3 w50 left" >
+                            <input name="responsavel"type="text" class="form-control rounded-e" id="floatingInput" >
+                            <label for="floatingInput">responsavel</label>
+                        </div>
+                        <div class="form-floating mb-3 w50 right">
+                            <input  name="razaoSocial"type="text" class="form-control rounded-e" id="floatingPassword" >
+                            <label for="floatingPassword">Razão Social</label>
+                        </div>
+                        <div class="form-floating mb-3 w50 left" >
+                                <input name="contato"type="text" class="form-control rounded-e" id="floatingInput" >
+                                <label for="floatingInput">Contato</label>
+                        </div>
+                            <div class="form-floating mb-3 w50 right">
+                                <input  name="cnpj"type="text" class="form-control rounded-e" id="floatingPassword" p>
+                                <label for="floatingPassword">CNPJ</label>
+                            </div>
+                            <div class="form-group mb-3 w100 left ">
+                                <textarea name="mensagem"class="form-control rounded-e" id="floatingPassword"cols="30" placeholder="Mensagem" rows="8"></textarea>
+                            </div>
+                            <div  class=" button row mt-4 left  ">
+                                
+                                <div class="col-5  ">
+                                  <button class="btn btn-lg btn-dark btn-block  rounded-e bb" type="submit">Enviar</button>
+                                </div>
+                              </div>
+                    </form>
+
+                </div>
+                </div>
+                
+                
+
+            </section>
+           
         </main>
     </div>
     <script>
